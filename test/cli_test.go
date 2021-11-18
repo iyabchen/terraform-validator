@@ -110,12 +110,16 @@ func TestCLI(t *testing.T) {
 		{name: "example_storage_bucket_iam_member", compareConvertOutput: compareMergedIamMemberOutput},
 		{name: "example_storage_bucket_iam_member_random_suffix"},
 		{name: "example_storage_bucket_iam_policy"},
+		{name: "example_spanner_instance_iam_policy"},
+		{name: "example_spanner_instance_iam_binding"},
+		{name: "example_spanner_instance_iam_member"},
 		{name: "full_compute_firewall"},
 		{name: "full_compute_instance"},
 		{name: "full_container_cluster"},
 		{name: "full_container_node_pool"},
 		{name: "full_sql_database_instance"},
 		{name: "full_storage_bucket"},
+		{name: "full_spanner_instance"},
 	}
 
 	// Map of cases to skip to reasons for the skip

@@ -109,6 +109,9 @@ google_spanner_database_iam_binding              | spanner.googleapis.com/Databa
 google_spanner_database_iam_member               | spanner.googleapis.com/Database
 google_spanner_database_iam_policy               | spanner.googleapis.com/Database
 google_spanner_instance                          | spanner.googleapis.com/Instance
+google_spanner_instance_iam_binding              | spanner.googleapis.com/Instance
+google_spanner_instance_iam_member               | spanner.googleapis.com/Instance
+google_spanner_instance_iam_policy               | spanner.googleapis.com/Instance
 google_sql_database_instance                     | sqladmin.googleapis.com/Instance
 google_storage_bucket                            | storage.googleapis.com/Bucket
 google_storage_bucket_iam_binding                | storage.googleapis.com/Bucket
