@@ -100,9 +100,10 @@ You will also need to add an entry to [`resource_converters.go.erb`](https://git
 To generate terraform-validator code locally, run the following from the root of the `magic-modules` repository:
 
 ```
-cd mmv1
 make validator OUTPUT_PATH="/path/to/your/terraform-validator"
 ```
+
+Make sure you have `goimports` and `gofmt` available in your PATH beforehand, so the command can format the files during the generation process.
 
 You can then run `make test` inside your terraform-validator repository to make sure that your code compiles and passes basic unit tests.
 
@@ -134,6 +135,6 @@ Now [run your tests](./index.md#testing) and make sure they pass locally before 
 
 Now that you have your code working locally, open PRs for [Magic Modules](https://github.com/GoogleCloudPlatform/magic-modules) and terraform-validator.
 
-For the Magic Modules PR, the most important check is `terraform-validator-test` - the other checks only matter if you're also making changes to the terraform provider. 
+For the Magic Modules PR, the most important check is `terraform-validator-test` - the other checks only matter if you're also making changes to the terraform provider.
 
 If any of the checks on your terraform validator PR are failing, make sure you can run the unit and integration tests successfully locally.
